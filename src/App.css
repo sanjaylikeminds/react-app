@@ -16,7 +16,7 @@
   float: left;
   margin-right: 2rem;
 }
-.App-header .App-logo img{
+.App-header .App-logo img {
   width: 74px;
 }
 
@@ -45,4 +45,8 @@
   to {
     transform: rotate(360deg);
   }
+}
+.likemind-community {
+  width: 100%;
+  float: left;
 }
