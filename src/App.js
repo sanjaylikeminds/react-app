@@ -41,7 +41,7 @@ function App() {
               <Link to="/chatroom">Chatroom</Link>
             </li>
             <li>
-              <Link to="/community">Community</Link>
+              <Link to="/community">MannKiBaat</Link>
             </li>
             <li>
               <Link to="/">Login</Link>
@@ -52,6 +52,16 @@ function App() {
         <Routes>
           <Route path="/" exact element={<Home />} />
           <Route path="/community" element={<Community />} />
+          <Route path="/community/:communityId" element={<Community />} />
+          <Route
+            path="/community/:communityId/collabcard/:chatroomId"
+            element={<Community />}
+          />
+          <Route
+            path="/community/community_feed/:communityId/profile/:chatroomId"
+            element={<Community />}
+          />
+
           <Route path="/chatroom" element={<Chatroom />} />
         </Routes>
       </div>
