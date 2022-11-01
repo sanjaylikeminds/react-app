@@ -4,7 +4,7 @@ import "./index.css";
 // import "likeminds-sdk/styles.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-// import "likeminds-sdk/likeminds-sdk.js";
+import "likeminds-sdk/likeminds-sdk.js";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
