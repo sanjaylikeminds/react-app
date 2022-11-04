@@ -50,9 +50,10 @@ function App() {
         </header>
 
         <Routes>
-          <Route path="/" exact element={<Home />} />
-          <Route path="/community" element={<Community />} />
-          <Route path="/community/:communityId" element={<Community />} />
+          <Route path="/*" exact element={<Home />} />
+          <Route path="/community/*" element={<Community />} />
+          <Route path="/community/community_feed/*" element={<Community />} />
+          {/* <Route path="/community/:communityId" element={<Community />} />
           <Route
             path="/community/:communityId/collabcard/:chatroomId"
             element={<Community />}
@@ -60,9 +61,9 @@ function App() {
           <Route
             path="/community/community_feed/:communityId/profile/:chatroomId"
             element={<Community />}
-          />
+          /> */}
 
-          <Route path="/chatroom" element={<Chatroom />} />
+          <Route path="/chatroom/*" element={<Chatroom />} />
         </Routes>
       </div>
     </Router>
